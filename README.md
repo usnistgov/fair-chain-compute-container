@@ -9,13 +9,13 @@ A WIPP plugin (to be used in the [WIPP - Web Image Processing Pipelines system](
 
 ## Base Docker images for WIPP plugins
 - wipp/wipp-plugins-base:java-openjdk8
-- wipp/wipp-plugins-base:c++-htgs-fastimage
+- wipp/wipp-plugins-base:gcc-htgs-fastimage
 - wipp/wipp-plugins-base:python3-tesnorflow-skimage
 - wipp/wipp-plugins-base:imagej-fiji
 
 ## Dockerfile templates for WIPP plugins
 - Java programm using `wipp/wipp-plugins-base:java-openjdk8`
-- C++ program using `wipp/wipp-plugins-base:c++-htgs-fastimage`
+- C++ program using `wipp/wipp-plugins-base:gcc-htgs-fastimage`
 - Python3/Tensorflow program using `wipp/wipp-plugins-base:python3-tensorflow-skimage`
 - ImageJ macro using `wipp/wipp-plugins-base:imagej-fiji`
 

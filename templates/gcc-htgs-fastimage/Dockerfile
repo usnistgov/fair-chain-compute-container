@@ -1,4 +1,4 @@
-FROM wipp/wipp-plugins-base:c++-htgs-fastimage
+FROM wipp/wipp-plugins-base:gcc-htgs-fastimage
 
 # Update maintainer
 MAINTAINER Plugin Maintainer
