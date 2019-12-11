@@ -13,5 +13,6 @@ RUN mkdir -p ${EXEC_DIR} \
     && mkdir -p ${DATA_DIR}/outputs
 
 # Install additional libraries
-RUN apt -y install graphviz
+RUN apt-get update && apt-get install -y \
+    graphviz
 RUN pip3 install lmdb scikit-image

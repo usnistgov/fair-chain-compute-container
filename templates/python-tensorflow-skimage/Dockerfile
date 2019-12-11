@@ -1,4 +1,4 @@
-FROM wipp/wipp-plugins-base:python3-tesnorflow-skimage
+FROM wipp/wipp-plugins-base:python3-tensorflow-skimage
 MAINTAINER National Institue of Standards and Technology
 
 # Update maintainer
