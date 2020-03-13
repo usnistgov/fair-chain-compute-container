@@ -10,7 +10,7 @@ A WIPP plugin (to be used in the [WIPP - Web Image Processing Pipelines system](
 ## Base Docker images for WIPP plugins
 - wipp/wipp-plugins-base:java-openjdk8
 - wipp/wipp-plugins-base:gcc-htgs-fastimage
-- wipp/wipp-plugins-base:python3-tesnorflow-skimage
+- wipp/wipp-plugins-base:python3-tensorflow-skimage
 - wipp/wipp-plugins-base:imagej-fiji
 
 ## Dockerfile templates for WIPP plugins
@@ -21,6 +21,9 @@ A WIPP plugin (to be used in the [WIPP - Web Image Processing Pipelines system](
 
 ## JSON manifests for WIPP plugins
 The JSON manifest describes the inputs and outputs of the plugin, specifies the Docker image of the plugin, and provides general information about the plugin (such as description, author, code repository, etc.).
+
+### WIPP plugin manifest JSON schema
+A draft of the WIPP plugin JSON manifest schema is available [in the plugin-manifest/schema folder](plugin-manifest/schema/wipp-plugin-manifest-schema.json). It can be used to validate plugin manifests.
 
 ### Examples of WIPP plugins manifests
 Learn by example: the following link provides a list of WIPP plugins maintained by the WIPP team, along with their JSON manifests.  
@@ -36,11 +39,13 @@ Learn by example: the following link provides a list of WIPP plugins maintained 
 - "number",
 - "integer",
 - "enum",
-- "array": array of strings that will concatenated as a single string,
+- "array": array of strings that will be concatenated as a single string,
 - "boolean".
 
 ### Supported output data types
 - "collection": path to a WIPP images collection folder,
 - "stitchingVector": path to a WIPP stitching vectors collection folder,
 - "tensorflowModel": path to a WIPP Tensorflow model folder,
-- "csvCollection": path to a WIPP CSV collection folder.
+- "tensorboardLogs": path to a WIPP Tensorboard logs folder,
+- "csvCollection": path to a WIPP CSV collection folder,
+- "pyramid": path to a WIPP pyramid (dzi format).
