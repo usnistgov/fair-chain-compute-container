@@ -1,0 +1,44 @@
+{
+	"name": "Simple Python Thresholding Plugin",
+	"version": "0.0.1",
+	"title": "Simple Python Thresholding",
+	"author": "Mylene Simon",
+    "institution": "National Institute of Standards and Technology",
+    "repository": "https://github.com/usnistgov/WIPP-Plugins-base-templates",
+    "website": null,
+    "citation": null,
+	"description": "Simple manual thresholding",
+	"containerId": "wipp/wipp-simple-python-thresh:0.0.1",
+	"inputs": [
+		{
+			"name": "inputImages",
+			"type": "collection",
+            "required": true,
+			"description": "Input images"
+		},
+		{
+			"name": "threshold",
+			"type": "number",
+			"required": true,
+			"description": "Threshold value"
+		}
+	],
+	"outputs": [
+		{
+			"name": "output",
+			"type": "collection",
+			"description": "Output images"
+		}
+	],
+	"ui": [
+		{
+			"key": "inputs.inputImages",
+			"title": "Images collection: ",
+			"description": "Pick a collection..."
+		},
+		{
+			"key": "inputs.threshold",
+			"title": "Threshold value: "
+		}
+	]
+}

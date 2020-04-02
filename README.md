@@ -7,6 +7,11 @@ A WIPP plugin (to be used in the [WIPP - Web Image Processing Pipelines system](
 - a computational program packaged as a Docker image,
 - a JSON manifest file describing the plugin.
 
+## Sample plugins
+Simple plugins that can be used as a starting point for writting your own plugins:  
+- [Basic thresholding in Python](sample-plugins/python-threshold)
+
+
 ## Base Docker images for WIPP plugins
 - wipp/wipp-plugins-base:java-openjdk8
 - wipp/wipp-plugins-base:gcc-htgs-fastimage
