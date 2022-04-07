@@ -16,8 +16,5 @@ RUN pip install numpy scikit-image
 # Copy Python script
 COPY src ${EXEC_DIR}/
 
-# Working directory
-WORKDIR ${EXEC_DIR}
-
 # Default command. Additional arguments are provided through the command line
-ENTRYPOINT ["python", "threshold.py"]
+ENTRYPOINT ["python", "/opt/executables/threshold.py"]
