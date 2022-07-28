@@ -161,7 +161,9 @@
               "tensorflowModel",
               "csvCollection",
               "pyramid",
+              "pyramidAnnotation",
               "notebook",
+              "genericData",
               "string",
               "number",
               "integer",
@@ -446,7 +448,9 @@
               "tensorflowModel",
               "tensorboardLogs",
               "csvCollection",
-              "pyramid"
+              "pyramid",
+              "pyramidAnnotation",
+              "genericData"
             ],
             "title": "Output type",
             "examples": [
@@ -615,6 +619,91 @@
             }
           ]
         }
-    }
+    },
+    "resourceRequirements": {
+        "type": "object",
+        "default": {},
+        "title": "Plugin Resource Requirements",
+        "properties": {
+            "ramMin": {
+                "type": "number",
+                "title": "Minimum RAM in mebibytes (Mi)",
+                "examples": [
+                    2048
+                ]
+            },
+            "coresMin": {
+                "type": "number",
+                "title": "TMinimum number of CPU cores",
+                "examples": [
+                    1
+                ]
+            },
+            "cpuAVX": {
+                "type": "boolean",
+                "default": false,
+                "title": "Advanced Vector Extensions (AVX) CPU capability required",
+                "examples": [
+                    true
+                ]
+            },
+            "cpuAVX2": {
+                "type": "boolean",
+                "default": false,
+                "title": "Advanced Vector Extensions 2 (AVX2) CPU capability required",
+                "examples": [
+                    false
+                ]
+            },
+            "gpu": {
+                "type": "boolean",
+                "default": false,
+                "title": "GPU/accelerator required",
+                "examples": [
+                    true
+                ]
+            },
+            "cudaRequirements": {
+                "type": "object",
+                "default": {},
+                "title": "GPU Cuda-related requirements",
+                "properties": {
+                    "deviceMemoryMin": {
+                        "type": "number",
+                        "default": 0,
+                        "title": "Minimum device memory",
+                        "examples": [
+                            100
+                        ]
+                    },
+                    "cudaComputeCapability": {
+                        "type": ["string", "array"],
+                        "default": null,
+                        "title": "The cudaComputeCapability Schema",
+                        "description": "Specify either a single minimum value, or an array of valid values",
+                        "examples": [
+                            "8.0",
+                            ["3.5", "5.0", "6.0", "7.0", "7.5", "8.0"]
+                        ]
+                    }
+                },
+                "examples": [{
+                    "deviceMemoryMin": 100,
+                    "cudaComputeCapability": "8.0"
+                }]
+            }
+        },
+        "examples": [{
+            "ramMin": 2048,
+            "coresMin": 1,
+            "cpuAVX": true,
+            "cpuAVX2": false,
+            "gpu": true,
+            "cudaRequirements": {
+                "deviceMemoryMin": 100,
+                "cudaComputeCapability": "8.0"
+            }
+        }]
+      }
     }
   }
