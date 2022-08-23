@@ -130,6 +130,9 @@
       "title": "Base command",
       "description": "Base command to use while running container image",
       "default": null,
+      "items": {
+        "type": "string"
+      },
       "examples": [
         ["python3", "/opt/executable/main.py"]
       ]
