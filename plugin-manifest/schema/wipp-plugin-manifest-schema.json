@@ -18,10 +18,11 @@
     "name": {
       "$id": "#/properties/name",
       "type": "string",
-      "title": "Name of the plugin",
+      "title": "Plugin name",
+      "description": "Name of the plugin (format: org/name)",
       "default": "",
       "examples": [
-        "My Awesome Plugin"
+        "wipp/plugin-example"
       ],
       "minLength": 1,
       "pattern": "^(.*)$"
@@ -30,6 +31,7 @@
       "$id": "#/properties/version",
       "type": "string",
       "title": "Plugin version",
+      "description": "Version of the plugin (semantic versioning preferred)",
       "default": "",
       "examples": [
         "1.0.0"
@@ -41,9 +43,10 @@
       "$id": "#/properties/title",
       "type": "string",
       "title": "Plugin title",
+      "description": "Plugin title to display in WIPP forms",
       "default": "",
       "examples": [
-        "My really awesome plugin"
+        "WIPP Plugin example"
       ],
       "minLength": 1,
       "pattern": "^(.*)$"
@@ -52,9 +55,10 @@
       "$id": "#/properties/description",
       "type": "string",
       "title": "Description",
+      "title": "Short description of the plugin",
       "default": "",
       "examples": [
-        "My awesome segmentation algorithm"
+        "Custom image segmentation plugin"
       ],
       "minLength": 1,
       "pattern": "^(.*)$"
@@ -116,9 +120,19 @@
       "description": "Docker image ID",
       "default": "",
       "examples": [
-        "wipp/example-plugin:1.0.0"
+        "docker.io/wipp/plugin-example:1.0.0"
       ],
       "pattern": "^(.*)$"
+    },
+    "baseCommand": {
+      "$id": "#/properties/baseCommand",
+      "type": "array",
+      "title": "Base command",
+      "description": "Base command to use while running container image",
+      "default": null,
+      "examples": [
+        ["python3", "/opt/executable/main.py"]
+      ]
     },
     "inputs": {
       "$id": "#/properties/inputs",
@@ -634,7 +648,7 @@
             },
             "coresMin": {
                 "type": "number",
-                "title": "TMinimum number of CPU cores",
+                "title": "Minimum number of CPU cores",
                 "examples": [
                     1
                 ]
