@@ -116,8 +116,8 @@
     "containerId": {
       "$id": "#/properties/containerId",
       "type": "string",
-      "title": "ContainerId",
-      "description": "Docker image ID",
+      "title": "Container image",
+      "description": "Docker/container image ID",
       "default": "",
       "examples": [
         "docker.io/wipp/plugin-example:1.0.0"
