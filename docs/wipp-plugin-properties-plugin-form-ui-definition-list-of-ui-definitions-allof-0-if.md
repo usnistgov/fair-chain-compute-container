@@ -1,0 +1,48 @@
+# Untitled undefined type in WIPP Plugin manifest Schema
+
+```txt
+#/properties/ui#/properties/ui/items/allOf/0/if
+```
+
+
+
+
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                  |
+| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | --------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [wipp-plugin.schema.json\*](wipp-plugin.schema.json "open original schema") |
+
+## if Type
+
+unknown
+
+# undefined Properties
+
+| Property    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                     |
+| :---------- | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [key](#key) | Not specified | Optional | cannot be null | [WIPP Plugin manifest](wipp-plugin-properties-plugin-form-ui-definition-list-of-ui-definitions-allof-0-if-properties-key.md "\#/properties/ui#/properties/ui/items/allOf/0/if/properties/key") |
+
+## key
+
+
+
+
+`key`
+
+-   is optional
+-   Type: unknown
+-   cannot be null
+-   defined in: [WIPP Plugin manifest](wipp-plugin-properties-plugin-form-ui-definition-list-of-ui-definitions-allof-0-if-properties-key.md "\#/properties/ui#/properties/ui/items/allOf/0/if/properties/key")
+
+### key Type
+
+unknown
+
+### key Constraints
+
+**pattern**: the string must match the following regular expression: 
+
+```regexp
+^inputs\.[a-zA-Z0-9][-a-zA-Z0-9]*$
+```
+
+[try pattern](https://regexr.com/?expression=%5Einputs%5C.%5Ba-zA-Z0-9%5D%5B-a-zA-Z0-9%5D*%24 "try regular expression with regexr.com")
