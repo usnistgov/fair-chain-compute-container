@@ -23,8 +23,7 @@ Adherence to a specification for
 enables much better reuse of containerized tools 
 in complex data analyses by chaining tools into computational workflows.
 
-Through this RFF, we seek inputs from the community 
-on approaches 
+Through this RFF, we seek inputs from the community on approaches 
 - (a) to achieving interoperability of containerized software,
 - (b) to designing a container manifest file that meets the community needs, 
 and 
@@ -103,8 +102,8 @@ multiple research communities adopted the approach of containerizing heterogeneo
 (i.e., algorithms or tools or modules) and running them on institutional or commercially 
 available computer cluster, cloud, or high-performance computing (HPC) resources. 
 Biomedical microscopy imaging community is one of several stakeholder communities that 
-- (a) copes with very large datasets as the advancements in microscope designs and acquisition
-automations enabled generating terabyte-sized image collections in a relative short time 
+- (a) copes with very large datasets as the advancements in microscope designs and automated acquisition
+enabled generating terabyte-sized image collections in a relative short time 
 spans and 
 - (b) strives to reuse containerized tools and reproduce complex workflow analyses. 
 
