@@ -69,20 +69,16 @@ email or
 <a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> 
 repository "Issues" feature.
 
-The email submission should be sent to **TBD: wipp-team@nist.gov** and 
+The email submission should be sent to this **wipp-team@nist.gov** and 
 it should include 
 - (1) "Interoperable Containerized Computational Software" 
 in the subject line of the message and 
 - (2) how you came across this RFF in the body of the email. 
 
-For the submission via the 
-<a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> 
-repository "Issues" feature, one can find instructions how to open an Issue can 
-[here](https://pages.nist.gov/800-63-3/comment_help.html).
+For the submission via the <a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> 
+repository "Issues" feature, one can find instructions how to open an Issue can [here](https://pages.nist.gov/800-63-3/comment_help.html).
 
-Responses to questions will be posted publicly in this   
-<a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> 
-repository and accessible to all. 
+Responses to questions will be posted publicly in this <a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> repository and accessible to all. 
 
 ### Provide Your Feedback to the Following Questions
 
@@ -131,6 +127,7 @@ For questions about this RFF contact:
 
 Peter Bajcsy, National Institute of Standards and Technology, 100 Bureau Drive, 
 Gaithersburg, MD 20899; (301) 975-2958. 
+
 Direct media inquiries to NIST's Office of Public Affairs at (301) 975-2762. 
 Users of telecommunication devices for the deaf, or a text telephone, may call 
 the Federal Relay Service, toll-free at 1-800-877-8339.
