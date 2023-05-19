@@ -19,8 +19,8 @@ since it is plugged into a chain of algorithms (i.e., a computational workflow) 
 The specification of a manifest file consists of 
 - schema folder: JSON schema with all supported fields (entries)  
 - docs folder: documentation about each field in a manifest file
-- examples folder: Python and Java based image thresholding algorithms packaged into interoperable containerized tools
-- request for feedback folder: A list of questions about the manifest file to provide feedback on 
+- sample-plugins folder: Image thresholding and cropping algorithms packaged into interoperable containerized tools
+- request-for-feedback folder: A list of questions about the manifest file to provide feedback on 
 
 ## Origin
 A prototype of a container manifest was designed and tested by the Web Image Processing Pipelines project 
@@ -63,6 +63,7 @@ of container execution).
 - JSON schema that defines manifest file entries TO BE UPDATED [URL](https://github.com/usnistgov/WIPP-Plugins-base-templates/blob/master/plugin-manifest/schema/wipp-plugin-manifest-schema.json)
 - Online creation and validation of manifest files  TO BE UPDATED [URL](https://usnistgov.github.io/WIPP-Plugin-Manifest-generator/)
 - Example of an interoperable containerized tool for image thresholding [Basic thresholding in Python](sample-plugins/python-threshold)
+- Example of an interoperable containerized tool for image cropping [Image crop operation in Python](sample-plugins/python-crop)
 - Step-by-step tutorial about building interoperable containerized tools TO BE UPDATED [URL](WIPP-plugins-tutorial-1.pdf)
 - Best practices for containerizing software
 - Best practices for exposing user interfaces using manifest entries
