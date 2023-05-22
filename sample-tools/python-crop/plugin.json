@@ -11,7 +11,7 @@
 	"containerId": "wipp/wipp-simple-python-crop:0.0.1",
 	"inputs": [
 		{
-			"name": "image_dir",
+			"name": "imagedir",
 			"type": "collection",
             "required": true,
 			"description": "Input images"
@@ -31,14 +31,14 @@
 	],
 	"outputs": [
 		{
-			"name": "output_dir",
+			"name": "outputdir",
 			"type": "collection",
 			"description": "Output images"
 		}
 	],
 	"ui": [
 		{
-			"key": "inputs.image_dir",
+			"key": "inputs.imagedir",
 			"title": "Images collection: ",
 			"description": "Pick a collection..."
 		},

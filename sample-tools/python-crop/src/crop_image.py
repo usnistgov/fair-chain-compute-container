@@ -72,13 +72,13 @@ def crop_batch(image_dir, output_dir, xDim, yDim):
 
 def main():
     parser = argparse.ArgumentParser(prog='split', description='Script that crops images')
-    parser.add_argument('--image_dir', type=str, required=True, help='folder path to input images')
-    parser.add_argument('--output_dir', type=str, required=True, help='folder path to saving output tiles')
+    parser.add_argument('--imagedir', type=str, required=True, help='folder path to input images')
+    parser.add_argument('--outputdir', type=str, required=True, help='folder path to saving output tiles')
     parser.add_argument('--xDim', type=int, help='crop dimension in pixels along x-axis')
     parser.add_argument('--yDim', type=int, help='crop dimension in pixels along y-axis')
     args, unknown = parser.parse_known_args()
 
-    if args.image_dir is None:
+    if args.imagedir is None:
         print('ERROR: missing input image dir ')
         return
 
@@ -106,7 +106,7 @@ def main():
         print('ERROR: xDim or yDim is less than zero')
         return
 
-    crop_batch(args.image_dir, args.output_dir, xDim, yDim)
+    crop_batch(args.imagedir, args.outputdir, xDim, yDim)
 
 if __name__ == "__main__":
     main()
