@@ -2,10 +2,10 @@
 
 ## Purpose
 This document describes a manifest file accompanying 
-each containerized software algorithm (a computational tool) in order 
-1. to make computational tools interoperable with other tools in terms of their inputs and outputs, 
-2. to chain multiple tools into computational workflows to perform complex computations, and 
-3. to execute workflows in distributed computational environments, 
+each containerized software algorithm (a computational tool) in order to
+1. make computational tools interoperable with other tools in terms of their inputs and outputs, 
+2. chain multiple tools into computational workflows to perform complex computations, and 
+3. execute workflows in distributed computational environments, 
 such as computer clusters, computer clouds, and high-performance
 computing (HPC) environments.
 
@@ -19,8 +19,8 @@ since it is plugged into a chain of algorithms (i.e., a computational workflow) 
 The specification of a manifest file consists of 
 - schema folder: JSON schema with all supported fields (entries)  
 - docs folder: documentation about each field in a manifest file
-- examples folder: Python and Java based image thresholding algorithms packaged into interoperable containerized tools
-- request for feedback folder: A list of questions about the manifest file to provide feedback on 
+- sample-plugins folder: Image thresholding and cropping algorithms packaged into interoperable containerized tools
+- request-for-feedback folder: A list of questions about the manifest file to provide feedback on 
 
 ## Origin
 A prototype of a container manifest was designed and tested by the Web Image Processing Pipelines project 
@@ -33,7 +33,7 @@ NCATS NIH.
 
 ## Motivation
 - With the increasing size of collected data, distributed computational environments provide an acceleration option 
-for completing data analyses over very large data collections. 
+for completing data analyses over very large data collections and for federated learning over many data collections. 
 - In order to run heterogeneous analysis tools 
 written in multiple programming languages and with many dependencies on other software libraries, 
 containerization of tools offers a valuable solution for software
@@ -68,6 +68,7 @@ of container execution).
 
 - [Simple examples](sample-plugins) of interoperable containerized tools
     - [Basic thresholding in Python](sample-plugins/python-threshold) - Example of interoperable containerized tool for image thresholding 
+    - [Image crop operation in Python](sample-plugins/python-crop) - Example of interoperable containerized tool for image cropping 
 
 
 ## Learn by example

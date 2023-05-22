@@ -1,0 +1,54 @@
+{
+	"name": "Simple Python Image Crop Plugin",
+	"version": "0.0.1",
+	"title": "Simple Python Image Crop",
+	"author": "Peter Bajcsy",
+    "institution": "National Institute of Standards and Technology",
+    "repository": "https://github.com/usnistgov/WIPP-Plugins-base-templates",
+    "website": null,
+    "citation": null,
+	"description": "Simple image crop operation",
+	"containerId": "wipp/wipp-simple-python-crop:0.0.1",
+	"inputs": [
+		{
+			"name": "image_dir",
+			"type": "collection",
+            "required": true,
+			"description": "Input images"
+		},
+		{
+			"name": "xDim",
+			"type": "number",
+			"required": true,
+			"description": "cropped size along x axis"
+		},
+		{
+			"name": "yDim",
+			"type": "number",
+			"required": true,
+			"description": "cropped size along y axis"
+		}
+	],
+	"outputs": [
+		{
+			"name": "output_dir",
+			"type": "collection",
+			"description": "Output images"
+		}
+	],
+	"ui": [
+		{
+			"key": "inputs.image_dir",
+			"title": "Images collection: ",
+			"description": "Pick a collection..."
+		},
+		{
+			"key": "inputs.xDim",
+			"title": "cropped width value: "
+		},
+				{
+			"key": "inputs.yDim",
+			"title": "cropped height value: "
+		}
+	]
+}
