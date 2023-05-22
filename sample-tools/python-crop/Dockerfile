@@ -16,7 +16,7 @@ RUN mkdir -p ${DATA_DIR}/inputs \
     && mkdir ${DATA_DIR}/outputs
 
 #Run pip install for image crop operation
-RUN pip3 install pillow numpy 
+RUN pip3 install numpy scikit-image
 
 # Image Crop
 # Copy Python script
