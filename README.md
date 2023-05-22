@@ -48,9 +48,8 @@ the tools can be chained into workflows and executed in distributed computationa
 The initial application use cases come from biomedical microscopy imaging domain since the advancements 
 in microscope designs and acquisition automations have enabled generating terabyte-sized image collections 
 in a relative short time spans. Examples of existing software tools for microscopy imaging use cases can be found 
-in the GitHub repositories at NIST [URL](https://github.com/usnistgov/WIPP/tree/master/plugins) and at NCATS NIH 
-[URL](https://github.com/PolusAI/polus-plugins). The software tools can also be searched and found via a tool registry, 
-currently available for NIST tools at [URL](https://wipp-plugins.nist.gov/).
+in the [GitHub repositories at NIST](https://github.com/usnistgov/WIPP/tree/master/plugins) and [at NCATS NIH](https://github.com/PolusAI/polus-plugins). The software tools can also be searched and found via a tool registry, 
+currently available for NIST tools at [this URL](https://wipp-plugins.nist.gov/).
 
 Other application use cases can be supported, for example, chemistry analyses, molecular modeling, genomics, 
 or bioinformatics. The manifest specification is mainly focused on information 
@@ -60,22 +59,25 @@ of container execution).
 
 ## Assistance in Building Interoperable Containerized Tools
 
-- JSON schema that defines manifest file entries TO BE UPDATED [URL](https://github.com/usnistgov/WIPP-Plugins-base-templates/blob/master/plugin-manifest/schema/wipp-plugin-manifest-schema.json)
-- Online creation and validation of manifest files  TO BE UPDATED [URL](https://usnistgov.github.io/WIPP-Plugin-Manifest-generator/)
-- Example of an interoperable containerized tool for image thresholding [Basic thresholding in Python](sample-plugins/python-threshold)
-- Step-by-step tutorial about building interoperable containerized tools TO BE UPDATED [URL](WIPP-plugins-tutorial-1.pdf)
-- Best practices for containerizing software
-- Best practices for exposing user interfaces using manifest entries
+- [Containerized Tool Manifest](./schema/manifest.schema.json) - JSON schema that defines manifest file entries
+
+- [Documentation](./docs/README.md)
+    - [Manifest Schema documentation](./docs/manifest.md) - In-depth documentation of the manifest JSON schema
+    - [Best practices](./docs/best-practices.md) - Best practices and guidelines for building interoperable containerized tools
+- [Online Manifest Generator](https://usnistgov.github.io/WIPP-Plugin-Manifest-generator/) - Online creation and validation of manifest files 
+
+- [Simple examples](sample-plugins) of interoperable containerized tools
+    - [Basic thresholding in Python](sample-plugins/python-threshold) - Example of interoperable containerized tool for image thresholding 
 
 
-## Frequently Asked Questions
+## Learn by example
 
-- How do I implement conditional input parameters for my container? [Answer]()
+- Under construction
 
 
 ## Contacts
 
-Please, do not hesitate to send email to [email]() if the current specification should be modified to meet your needs
+Please, do not hesitate to [send email to our team](wipp-team@nist.gov) if the current specification should be modified to meet your needs
 
 
 
