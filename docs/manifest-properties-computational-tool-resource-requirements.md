@@ -11,6 +11,13 @@ https://raw.githubusercontent.com/usnistgov/fair-chain-compute-container/master/
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | --------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [manifest.schema.json\*](manifest.schema.json "open original schema") |
 
+
+**Resource requirements** are optional and allow schedulers of container-based workflows to optimally choose computational nodes for running containers on distributed computational resources.  
+Examples and documentation of schedulers and workflow management systems leveraging resource requirements:
+- [Kubernetes Resource Management for Pods and Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) allows for specifying resource `requests` and `limits` for `cpu`, `memory` and [`gpu`](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/). Other ways of [assigning pods to nodes](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/) can involve labels, taint and tolerations. Automatic labelling of nodes can be achieve using the [Kubernetes Node Feature Discovery add-on](https://github.com/kubernetes-sigs/node-feature-discovery), or vendor-specific add-ons such as Nvidia's [Gpu Feature Discovery](https://github.com/NVIDIA/gpu-feature-discovery/blob/main/README.md) or AMD's [Node Labeller](https://github.com/RadeonOpenCompute/k8s-device-plugin/tree/master/cmd/k8s-node-labeller).
+- [CWL's resource requirements](https://www.commonwl.org/user_guide/topics/specifying-software-requirements.html) section allows for specifying a variety of [hardware resource requirements](https://www.commonwl.org/v1.0/CommandLineTool.html#ResourceRequirement) and some implementations support vendor-specific requirements for GPUs.
+
+
 ## resourceRequirements Type
 
 `object` ([Computational Tool Resource Requirements](manifest-properties-computational-tool-resource-requirements.md))

@@ -18,12 +18,12 @@ In the context of *interoperable computational software*, computational tool or 
 since it is plugged into a chain of algorithms (i.e., a computational workflow) based on its interoperability property.   
 
 ## Folder Structure
-The specification of a manifest file consists of 
-- schema folder: JSON schema with all supported fields (entries)  
-- docs folder: Documentation about each field in a manifest file
-- sample-tools folder: Image thresholding and cropping algorithms packaged into interoperable containerized tools
-- request-for-feedback folder: A list of questions about the manifest file to provide feedback on 
-- templates folder: A set of Dockerfiles that form a base for building containerized tools  
+This repository for the specification of a manifest file consists of:
+- `schema` folder: JSON schema with all supported fields (entries)  
+    - The schema for a manifest file consists of sections describing inputs, outputs, UI, and resource requirements. The sections for `inputs` and `outputs` allow chaining containers’ inputs and outputs. The section `ui` allows on-the-fly generation of web user interface for collecting input arguments for running an application packaged in the container. The section `resourceRequirements` allows schedulers of container-based workflows to optimally choose computational nodes for running containers on distributed computational resources.
+- `docs` folder: Documentation about each field in a manifest file and general guidelines for building interoperable containerized computational tools
+- `sample-tools` folder: Image thresholding and cropping algorithms packaged into interoperable containerized tools
+- `request-for-feedback` folder: A list of questions about the manifest file to provide feedback on 
 
 ## Origin
 A prototype of a container manifest was designed and tested by the Web Image Processing Pipelines project 
