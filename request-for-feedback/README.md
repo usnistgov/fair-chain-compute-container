@@ -1,7 +1,8 @@
 # Request for Feedback
 
 **File specification for chaining containerized computational software:**
-Impact on reuse of containerized software for Image Analytics use cases
+Impact on achieving Findable, Accessible, Interoperable, and Reusable (FAIR) 
+Containerized Computational Software (FAIR-CCS) 
 
 ## Agency
 
@@ -18,10 +19,10 @@ Impact on reuse of containerized software for Image Analytics use cases
 The National Institute of Standards and Technology (NIST) is seeking 
 information to assist in evaluating and improving the specification for
 achieving interoperability of containerized computational software. 
-Adherence to a specification for 
-**Interoperable Containerized Computational Software (ICCS)** 
-enables much better reuse of containerized tools 
-in complex data analyses by chaining tools into computational workflows.
+Adherence to a specification for **Findable, Accessible, Interoperable, and Reusable (FAIR)
+Containerized Computational Software (FAIR-CCS)** enables much better 
+reuse of containerized tools in complex data analyses by 
+chaining tools into computational workflows.
 
 Through this RFF, we seek inputs from the community on approaches 
 - (a) to achieving interoperability of containerized software,
@@ -43,15 +44,15 @@ We are particularly interested in alternative or complementary data sources, ana
 
 Responses to this RFF will inform a possible revision 
 of 
-- (a) the current approach to achieving 
-Interoperable Containerized Computational Software (ICCS) via a manifest file,
-- (b) the entries in the current manifest file specification of ICCS,
+- (a) the current approach to achieving FAIR-CCS via a manifest file,
+- (b) the entries in the current manifest file specification of FAIR-CCS,
 - (c) the current tools that aim at automating adherence to 
-the ICCS manifest specification. 
+the FAIR-CCS manifest specification. 
 
 In addition, the responses will be discussed at the 2nd 
-workshop on Interoperability of Web Computational Plugins for Large Microscopy Image Analyses
-[(URL TBD)](TBD) planned to take place in December 2023.
+workshop on FAIR (Findable, Accessible, Interoperable, and Reusable) 
+Containerized Computational Software for Large Microscopy Image Analyses
+planned to take place in December 2023.
 
 
 ## Date
@@ -65,7 +66,7 @@ this RFF.
 
 Questions, comments, and other RFF inputs can be provided via
 email or 
-<a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> 
+<a href="https://github.com/usnistgov/fair-chain-compute-container/">GitHub</a> 
 repository "Issues" feature.
 
 The email submission should be sent to this **wipp-team@nist.gov** and 
@@ -74,10 +75,10 @@ it should include
 in the subject line of the message and 
 - (2) how you came across this RFF in the body of the email. 
 
-For the submission via the <a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> 
+For the submission via the <a href="https://github.com/usnistgov/fair-chain-compute-container/">GitHub</a> 
 repository "Issues" feature, one can find instructions how to open an Issue can [here](https://pages.nist.gov/800-63-3/comment_help.html).
 
-Responses to questions will be posted publicly in this <a href="https://github.com/usnistgov/WIPP-Plugins-base-templates/tree/docs-update">GitHub</a> repository and accessible to all. 
+Responses to questions will be posted publicly in this <a href="https://github.com/usnistgov/fair-chain-compute-container/">GitHub</a> repository and accessible to all. 
 
 ### Provide Your Feedback to the Following Questions
 

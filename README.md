@@ -1,4 +1,4 @@
-# Manifest Specification for Interoperable Containerized Computational Software (ICCS) 
+# Manifest Specification for FAIR Containerized Computational Software (FAIR-CCS) 
 
 ## Purpose
 This document describes a manifest file accompanying 
@@ -7,7 +7,9 @@ each containerized software algorithm (a computational tool) in order to
 2. chain multiple tools into computational workflows to perform complex computations, and 
 3. execute workflows in distributed computational environments, 
 such as computer clusters, computer clouds, and high-performance
-computing (HPC) environments.
+computing (HPC) environments. Overall, the goal is to create
+Findable, Accessible, Interoperable, and Reusable (FAIR) Containerized 
+Computational Software (FAIR-CCS). 
 
 ## Terminology
 *Computational Software* is interchangeably used with the word *tool* or *algorithm* (computational tool or algorithm). 
@@ -18,9 +20,10 @@ since it is plugged into a chain of algorithms (i.e., a computational workflow) 
 ## Folder Structure
 The specification of a manifest file consists of 
 - schema folder: JSON schema with all supported fields (entries)  
-- docs folder: documentation about each field in a manifest file
-- sample-plugins folder: Image thresholding and cropping algorithms packaged into interoperable containerized tools
+- docs folder: Documentation about each field in a manifest file
+- sample-tools folder: Image thresholding and cropping algorithms packaged into interoperable containerized tools
 - request-for-feedback folder: A list of questions about the manifest file to provide feedback on 
+- templates folder: A set of Dockerfiles that form a base for building containerized tools  
 
 ## Origin
 A prototype of a container manifest was designed and tested by the Web Image Processing Pipelines project 
@@ -48,7 +51,8 @@ the tools can be chained into workflows and executed in distributed computationa
 The initial application use cases come from biomedical microscopy imaging domain since the advancements 
 in microscope designs and acquisition automations have enabled generating terabyte-sized image collections 
 in a relative short time spans. Examples of existing software tools for microscopy imaging use cases can be found 
-in the [GitHub repositories at NIST](https://github.com/usnistgov/WIPP/tree/master/plugins) and [at NCATS NIH](https://github.com/PolusAI/polus-plugins). The software tools can also be searched and found via a tool registry, 
+in the [GitHub repositories at NIST](https://github.com/usnistgov/WIPP/tree/master/plugins) and 
+[at NCATS NIH](https://github.com/PolusAI/polus-plugins). The software tools can also be searched and found via a tool registry, 
 currently available for NIST tools at [this URL](https://wipp-plugins.nist.gov/).
 
 Other application use cases can be supported, for example, chemistry analyses, molecular modeling, genomics, 
@@ -66,9 +70,9 @@ of container execution).
     - [Best practices](./docs/best-practices.md) - Best practices and guidelines for building interoperable containerized tools
 - [Online Manifest Generator](https://usnistgov.github.io/WIPP-Plugin-Manifest-generator/) - Online creation and validation of manifest files 
 
-- [Simple examples](sample-plugins) of interoperable containerized tools
-    - [Basic thresholding in Python](sample-plugins/python-threshold) - Example of interoperable containerized tool for image thresholding 
-    - [Image crop operation in Python](sample-plugins/python-crop) - Example of interoperable containerized tool for image cropping 
+- [Simple examples](./sample-tools) of interoperable containerized tools
+    - [Basic thresholding in Python](./sample-tools/python-threshold) - Example of interoperable containerized tool for image thresholding 
+    - [Image crop operation in Python](./sample-tools/python-crop) - Example of interoperable containerized tool for image cropping 
 
 
 ## Learn by example
