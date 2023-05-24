@@ -55,7 +55,7 @@
       "$id": "#/properties/description",
       "type": "string",
       "title": "Description",
-      "title": "Short description of the computational tool",
+      "description": "Short description of the computational tool",
       "default": "",
       "examples": [
         "Custom image segmentation tool"
