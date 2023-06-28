@@ -12,23 +12,107 @@ Containerized Computational Software (FAIR-CCS)
 
 ## Action
 
-**Request for Feedback (RFF)**
+**Request for Information (RFI)**
 
 ## Summary
 
-The National Institute of Standards and Technology (NIST) is seeking 
-information to assist in evaluating and improving the specification for
-achieving interoperability of containerized computational software. 
-Adherence to a specification for **Findable, Accessible, Interoperable, and Reusable (FAIR)
-Containerized Computational Software (FAIR-CCS)** enables much better 
-reuse of containerized tools in complex data analyses by 
-chaining tools into computational workflows.
+The National Institute of Standards and Technology (NIST) is evaluating and 
+improving the specification for achieving interoperability of containerized 
+computational software.  Adherence to a specification for 
+**Findable, Accessible, Interoperable, and Reusable (FAIR) Containerized 
+Computational Software (FAIR-CCS)** enables better reuse of containerized tools 
+in complex data analyses by chaining tools into computational workflows. 
+NIST requests information from the community on approaches to achieving interoperability
+of containerized software, designing a container manifest file that meets the community 
+needs, and lowering the barrier for constructing such a manifest file. 
+Responses to this RFI will also inform a possible revision of the current approach 
+to achieving FAIR-CCS via a manifest file, the entries in the current manifest file 
+specification of FAIR-CCS, and the current tools that aim at automating adherence 
+to the FAIR-CCS manifest specification. 
 
-Through this RFF, we seek inputs from the community on approaches 
-- (a) to achieving interoperability of containerized software,
-- (b) to designing a container manifest file that meets the community needs, 
-and 
-- (c) to lowering the barrier for constructing such a manifest file.
+## Dates
+
+### For Comments
+Comments in response to this RFI must be received by 5:00 PM Eastern time on December 7, 2023. 
+Written comments in response to the RFI should be submitted according to the instructions in 
+the ADDRESSES and SUPPLEMENTARY INFORMATION sections below. 
+Submissions received after that date may not be considered.
+
+### For Public Meeting
+
+The responses will be discussed at the 2nd 
+workshop on FAIR (Findable, Accessible, Interoperable, and Reusable) 
+Containerized Computational Software for Large Microscopy Image Analyses
+[URL](https://www.nist.gov/news-events/events/2023/12/2nd-international-workshop-fair-containerized-computational-software).
+A virtual workshop will be held on December 5-7, 2023 from 11 a.m. to 3 p.m. Eastern Time. 
+Requests to participate must be received via the virtual workshop registration website no later 
+than December 1, 2023.
+
+## Addresses
+
+Responses can be submitted by either of the following methods:
+
+- Electronic submission: Submit electronic public comments via the Federal e-Rulemaking Portal.
+1. Go to www.regulations.gov and enter [NIST-2023-0004] in the search field,
+2. Click the “Comment Now!” icon, complete the required fields, and
+3. Enter or attach your comments.
+
+- E-mail: Comments in electronic form may also be sent to **wipp-team@nist.gov**. 
+Include “RFI Response: FAIR-CCS” in the subject line of the message. 
+
+- Instructions: Attachments will be accepted in plain text, Microsoft Word, or Adobe PDF formats. 
+Comments containing references, studies, research, and other empirical data that are not widely 
+published should include copies or electronic links of the referenced materials. 
+
+- All comments responding to this document will be a matter of public record.  
+Relevant comments will generally be available on the Federal eRulemaking Portal at
+[URL](https://www.Regulations.gov) and, after the comment period closes, on NIST's website at 
+[URL](https://www.nist.gov/news-events/events/2023/12/2nd-international-workshop-fair-containerized-computational-software).
+NIST will not accept comments accompanied by a request that part or all of the material be treated
+confidentially because of its business proprietary nature or for any other reason.  
+Therefore, do not submit confidential business information or otherwise sensitive, protected, 
+or personal information, such as account numbers, Social Security numbers, or names of other 
+individuals.
+
+
+## Request For Information 
+
+Respondents are encouraged – but are not required – to respond to each topic area and to present
+their responses after each topic area. The following topic areas cover the major areas about 
+which NIST seeks comment. Respondents may organize their submissions in response to this RFI 
+in any manner. Responses may include estimates, which should be identified as such.
+All relevant responses that comply with the requirements listed in the DATES and ADDRESSES 
+sections of this RFI will be considered.
+
+### NIST is requesting information related to the following topics:
+
+1. Approaches to chain containerized computational software 
+2. Important characteristics of sets of containerized computational software for reuse 
+3. Methods to facilitate the characterization of containerized computational software  
+4. Best practices for containerization of computational algorithms and for the interfaces between containerized algorithms accessing datasets in heterogeneous storage environments 
+5. Best practices for finding containerized software tools and container-based workflows in online registries using application programming interfaces (APIs) 
+6. Best practices for executing container-based workflows using workflow engines and job schedulers for computational resource management in distributed computational environments
+
+
+## Supplementary Information
+
+With the increasing popularity of software containers as standardized units for deployment, 
+research communities have adopted the use of containerizing heterogeneous software 
+(i.e., algorithms or tools or modules) and are running them on institutional or commercially 
+available computer cluster, cloud, or high-performance computing (HPC) resources. 
+For example, in biomedical microscopy imaging, stakeholders cope with very large datasets 
+as the advancements in microscope designs and automated acquisition generate terabyte-size 
+image collections in a relative short time span. Stakeholders also strive to reuse containerized 
+tools and reproduce complex workflow analyses. Accordingly, there is an opportunity in biomedical
+microscopy imaging to improve the reuse and reproducibility of analyses via specifications of 
+interoperable containerized algorithms (i.e., computational tools or software plugins) in order to 
+create container-based workflows (i.e., chained containerized algorithms). 
+
+In a more general context, as working with software containers, heterogeneous file formats
+and storage mechanisms, a variety of scientific workflow engines, distributed computational 
+and storage environments, and application programming interfaces to metadata registries and 
+ontologies involve complex analyses, the stakeholders are expected to be from academia, industry,
+and government. 
 
 Initially, NIST hosted the 1st workshop on Interoperability of Web Computational Plugins for Large Microscopy Image Analyses
 [(URL)](https://www.nist.gov/news-events/events/2019/12/interoperability-web-computational-plugins-large-microscopy-image) in 2019.
@@ -37,93 +121,21 @@ In collaboration with the National Center for Advancing Translational Sciences (
 the specifications of a container manifest file have been expanded to accommodate 
 additional bioimaging application needs.
 
-The public inputs provided in response to this RFF will inform 
-the NIST team who will conduct the challenge and 
-will be beneficial for the development of future challenges. 
-We are particularly interested in alternative or complementary data sources, analytic approaches, and relevant policy domains as well as more general feedback on the tentative challenge process defined below.
-
-Responses to this RFF will inform a possible revision 
-of 
+Through this RFI, we seek inputs from the community on approaches 
+- (a) to achieving interoperability of containerized software,
+- (b) to designing a container manifest file that meets the community needs, 
+and 
+- (c) to lowering the barrier for constructing such a manifest file.
+- 
+Responses to this RFI will inform a possible revision of 
 - (a) the current approach to achieving FAIR-CCS via a manifest file,
 - (b) the entries in the current manifest file specification of FAIR-CCS,
 - (c) the current tools that aim at automating adherence to 
 the FAIR-CCS manifest specification. 
 
-In addition, the responses will be discussed at the 2nd 
-workshop on FAIR (Findable, Accessible, Interoperable, and Reusable) 
-Containerized Computational Software for Large Microscopy Image Analyses
-planned to take place in December 2023.
-
-
-## Date
-
-Response Deadline: December 1st, 2023.
-
-## To Request Further Information and Submit Feedback
- 
-We have provided a few questions for your feedback at the bottom of 
-this RFF.
-
-Questions, comments, and other RFF inputs can be provided via
-email or 
-<a href="https://github.com/usnistgov/fair-chain-compute-container/">GitHub</a> 
-repository "Issues" feature.
-
-The email submission should be sent to this **wipp-team@nist.gov** and 
-it should include 
-- (1) "Interoperable Containerized Computational Software" 
-in the subject line of the message and 
-- (2) how you came across this RFF in the body of the email. 
-
-For the submission via the <a href="https://github.com/usnistgov/fair-chain-compute-container/">GitHub</a> 
-repository "Issues" feature, one can find instructions how to open an Issue can [here](https://pages.nist.gov/800-63-3/comment_help.html).
-
-Responses to questions will be posted publicly in this <a href="https://github.com/usnistgov/fair-chain-compute-container/">GitHub</a> repository and accessible to all. 
-
-### Provide Your Feedback to the Following Questions
-
-1. What approaches do you use to chain 
-containerized computational software?
-2. What are the most important characteristics of containerized computational software
-for reuse?
-3. What tools and template forms (or code snippets) do you use 
-to facilitate the characterization of 
-containerized computational software?
-4. Are you interested in consolidating best practices for containerization of 
-algorithms and interfaces between containerized algorithms and datasets in heterogeneous storage environments, 
-5. Are you interested in defining application programming interfaces (APIs)
-for finding containerized software tools and container-based workflows in registries, and 
-6. What workflow engines and schedulers in distributed computational 
-environments are critical in your work to support executions 
-of container-based workflows?
-
-## Stakeholders
-With the increasing popularity of software containers as standardized units for deployment,
-multiple research communities adopted the approach of containerizing heterogeneous software
-(i.e., algorithms or tools or modules) and running them on institutional or commercially 
-available computer cluster, cloud, or high-performance computing (HPC) resources. 
-Biomedical microscopy imaging community is one of several stakeholder communities that 
-- (a) copes with very large datasets as the advancements in microscope designs and automated acquisition
-enabled generating terabyte-sized image collections in a relative short time 
-spans and 
-- (b) strives to reuse containerized tools and reproduce complex workflow analyses. 
-
-In the context of biomedical microscopy imaging, there is an opportunity to improve
-reuse and reproducibility of analyses via specifications of interoperable containerized 
-algorithms (i.e., computational tools or software plugins) in order to enable 
-creating container-based workflows (i.e., chained containerized algorithms). 
-
-In a more general context, the stakeholders come from academia, industry, and government
-as complex analyses involve working with software containers, 
-heterogeneous file formats and storage mechanisms, 
-a variety of scientific workflow engines, 
-distributed computational and storage environments, and 
-application programming interfaces to metadata registries and ontologies.
-
-
 ## For Further Information Contact:
 
-For questions about this RFF contact: 
+For questions about this RFI contact: 
 
 Peter Bajcsy, National Institute of Standards and Technology, 100 Bureau Drive, 
 Gaithersburg, MD 20899; (301) 975-2958. 
@@ -133,6 +145,6 @@ Users of telecommunication devices for the deaf, or a text telephone, may call
 the Federal Relay Service, toll-free at 1-800-877-8339.
 
 Accessible Format:
-NIST will make the RFF available in alternate formats, such as Braille or large print, 
+NIST will make the RFI available in alternate formats, such as Braille or large print, 
 upon request by persons with disabilities.
 
