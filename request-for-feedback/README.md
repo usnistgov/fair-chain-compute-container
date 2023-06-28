@@ -52,19 +52,22 @@ than December 1, 2023.
 
 Responses can be submitted by either of the following methods:
 
-- Electronic submission: Submit electronic public comments via the Federal e-Rulemaking Portal.
+### Electronic submission: 
+Submit electronic public comments via the Federal e-Rulemaking Portal.
 1. Go to www.regulations.gov and enter [NIST-2023-0004] in the search field,
 2. Click the “Comment Now!” icon, complete the required fields, and
 3. Enter or attach your comments.
 
-- E-mail: Comments in electronic form may also be sent to **wipp-team@nist.gov**. 
+### E-mail: 
+Comments in electronic form may also be sent to **wipp-team@nist.gov**. 
 Include “RFI Response: FAIR-CCS” in the subject line of the message. 
 
-- Instructions: Attachments will be accepted in plain text, Microsoft Word, or Adobe PDF formats. 
+### Instructions: 
+Attachments will be accepted in plain text, Microsoft Word, or Adobe PDF formats. 
 Comments containing references, studies, research, and other empirical data that are not widely 
 published should include copies or electronic links of the referenced materials. 
 
-- All comments responding to this document will be a matter of public record.  
+All comments responding to this document will be a matter of public record.  
 Relevant comments will generally be available on the Federal eRulemaking Portal at
 [URL](https://www.Regulations.gov) and, after the comment period closes, on NIST's website at 
 [URL](https://www.nist.gov/news-events/events/2023/12/2nd-international-workshop-fair-containerized-computational-software).

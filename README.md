@@ -1,4 +1,5 @@
 # Manifest Specification for FAIR Containerized Computational Software (FAIR-CCS) 
+<img src="logo.png" alt="container-based workflow" width="200" height="200">
 
 ## Purpose
 This document describes a manifest file accompanying 
