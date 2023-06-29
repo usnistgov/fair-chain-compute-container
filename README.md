@@ -83,7 +83,7 @@ of container execution).
 
 ## Contacts
 
-Please, do not hesitate to [send email to our team](wipp-team@nist.gov) if the current specification should be modified to meet your needs
+Please, do not hesitate to [send email to our team](mailto:wipp-team@nist.gov) if the current specification should be modified to meet your needs
 
 
 
