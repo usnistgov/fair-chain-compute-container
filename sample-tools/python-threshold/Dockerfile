@@ -11,7 +11,7 @@ RUN mkdir -p ${EXEC_DIR} \
     && mkdir -p ${DATA_DIR}/outputs
 
 # Install python libraries
-RUN pip install numpy scikit-image
+RUN pip install numpy scikit-image imagecodecs
 
 # Copy Python script
 COPY src ${EXEC_DIR}/
