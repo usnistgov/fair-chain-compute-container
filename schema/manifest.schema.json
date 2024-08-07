@@ -6,6 +6,7 @@
   "default": null,
   "required": [
     "name",
+    "operationType",
     "version",
     "title",
     "description",
@@ -23,6 +24,23 @@
       "default": "",
       "examples": [
         "wipp/computational-tool-example"
+      ],
+      "minLength": 1,
+      "pattern": "^(.*)$"
+    },
+    "operationType": {
+      "$id": "#/properties/operationType",
+      "type": "array",
+      "title": "Computational tool type",
+      "description": "Type of the computational tool (format: org/operationType)",
+      "default": null,
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        ["segmentation", "classification"],
+        ["segmentation", "threshold"],
+        ["segmentation"]
       ],
       "minLength": 1,
       "pattern": "^(.*)$"

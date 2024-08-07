@@ -1,5 +1,6 @@
 {
     "name": "Simple Python Image Crop Plugin",
+    "operationType": ["crop"],
     "version": "0.0.1",
     "title": "Simple Python Image Crop",
     "author": "Peter Bajcsy",
@@ -33,7 +34,11 @@
         {
             "name": "outputdir",
             "type": "collection",
-            "description": "Output images"
+            "description": "Output images",
+            "options": {
+                "framework": "tensorflow",
+                "architecture": "other"
+            }
         }
     ],
     "ui": [

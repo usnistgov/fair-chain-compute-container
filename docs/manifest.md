@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/usnistgov/fair-chain-compute-container/master/
 | Property                                      | Type         | Required | Nullable       | Defined by                                                                                                                                                                                                                             |
 | :-------------------------------------------- | ------------ | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [name](#name)                                 | `string`     | Required | cannot be null | [Manifest schema](manifest-properties-computational-tool-name.md "\#/properties/name#/properties/name")                                                                                                                                |
+| [operationType](#operationType)               | `array`      | Required | cannot be null | [Manifest schema](manifest-properties-computational-tool-operationType.md "\#/properties/operationType#/properties/operationType")                                                                                                        |
 | [version](#version)                           | `string`     | Required | cannot be null | [Manifest schema](manifest-properties-computational-tool-version.md "\#/properties/version#/properties/version")                                                                                                                       |
 | [title](#title)                               | `string`     | Required | cannot be null | [Manifest schema](manifest-properties-computational-tool-title.md "\#/properties/title#/properties/title")                                                                                                                             |
 | [description](#description)                   | `string`     | Required | cannot be null | [Manifest schema](manifest-properties-short-description-of-the-computational-tool.md "\#/properties/description#/properties/description")                                                                                              |
@@ -67,6 +68,23 @@ Name of the computational tool (format: org/name)
 
 ```json
 "wipp/computational-tool-example"
+```
+
+## operationType
+
+Type of the computational tool (format: org/type)
+
+`operationType`
+
+-   is required
+-   Type: `string[]` ([Computational tool type](manifest-properties-computational-tool-operationType.md))
+-   cannot be null
+-   defined in: [Manifest schema](manifest-properties-computational-tool-operationType.md "\#/properties/operationType#/properties/operationType")
+
+### operationType Examples
+
+```json
+["segmentation"]
 ```
 
 ## version
